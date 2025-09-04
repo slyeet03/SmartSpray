@@ -8,7 +8,7 @@ class ControlScreen extends StatefulWidget {
 
 class _ControlScreenState extends State<ControlScreen> {
   final _servoController = TextEditingController(text: "0");
-  final _pumpController = TextEditingController(text: "2.0");
+  final _pumpController = TextEditingController(text: "2.0"); // pump seconds -> spray_time
   final _chemicalController = TextEditingController(text: "Manual");
   bool _spray = false;
   bool _loading = false;
@@ -18,7 +18,8 @@ class _ControlScreenState extends State<ControlScreen> {
     final payload = {
       "spray": _spray,
       "servo_index": int.tryParse(_servoController.text) ?? 0,
-      "pump_seconds": double.tryParse(_pumpController.text) ?? 0.0,
+      // IMPORTANT: use spray_time (what the Flask server expects)
+      "spray_time": double.tryParse(_pumpController.text) ?? 0.0,
       "chemical": _chemicalController.text,
       "quantity_per_200L": "manual"
     };
@@ -61,7 +62,7 @@ class _ControlScreenState extends State<ControlScreen> {
               TextField(
                 controller: _pumpController,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
-                decoration: InputDecoration(labelText: "Pump seconds"),
+                decoration: InputDecoration(labelText: "Spray time (seconds)"),
               ),
               TextField(
                 controller: _chemicalController,
@@ -77,4 +78,3 @@ class _ControlScreenState extends State<ControlScreen> {
         ));
   }
 }
-

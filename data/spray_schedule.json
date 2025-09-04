@@ -17,14 +17,14 @@
     "disease": "Leaf Mold",
     "spray": true,
     "spray_time": 2,
-    "servo_index": 3,
+    "servo_index": 0,
     "chemical": "Mancozeb"
   },
   "Tomato___Septoria_leaf_spot": {
     "disease": "Septoria leaf spot",
     "spray": true,
     "spray_time": 2.5,
-    "servo_index": 4,
+    "servo_index": 2,
     "chemical": "Azoxystrobin"
   },
   "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {

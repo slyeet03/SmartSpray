@@ -1,0 +1,269 @@
+[
+  {
+    "timestamp": "2025-09-04T00:30:35",
+    "source": "Webcam",
+    "disease": "Unknown",
+    "confidence": 0.18511256575584412,
+    "spray": false,
+    "spray_time": 0,
+    "servo_index": null,
+    "chemical": "None"
+  },
+  {
+    "timestamp": "2025-09-04T00:32:22",
+    "source": "Webcam",
+    "disease": "Unknown",
+    "confidence": 0.19150866568088531,
+    "spray": false,
+    "spray_time": 0,
+    "servo_index": null,
+    "chemical": "None"
+  },
+  {
+    "timestamp": "2025-09-04T00:33:01",
+    "source": "Webcam",
+    "disease": "Unknown",
+    "confidence": 0.19114671647548676,
+    "spray": false,
+    "spray_time": 0,
+    "servo_index": null,
+    "chemical": "None"
+  },
+  {
+    "timestamp": "2025-09-04T00:34:35",
+    "source": "Webcam",
+    "disease": "Unknown",
+    "confidence": 0.19332940876483917,
+    "spray": false,
+    "spray_time": 0,
+    "servo_index": null,
+    "chemical": "None"
+  },
+  {
+    "timestamp": "2025-09-04T00:35:01",
+    "source": "Webcam",
+    "disease": "Unknown",
+    "confidence": 0.19209586083889008,
+    "spray": false,
+    "spray_time": 0,
+    "servo_index": null,
+    "chemical": "None"
+  },
+  {
+    "timestamp": "2025-09-04T01:25:15",
+    "source": "Webcam",
+    "disease": "Early blight",
+    "confidence": 0.1915026307106018,
+    "spray": true,
+    "spray_time": 3,
+    "servo_index": 1,
+    "chemical": "Chlorothalonil",
+    "esp32_response": "Error: HTTPConnectionPool(host='192.168.29.101', port=80): Max retries exceeded with url: /servo?duration=3&servoindex=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x303feaf30>, 'Connection to 192.168.29.101 timed out. (connect timeout=5)'))"
+  },
+  {
+    "timestamp": "2025-09-04T01:44:17",
+    "source": "Webcam",
+    "disease": "TYLCV",
+    "confidence": 0.1843799203634262,
+    "spray": false,
+    "spray_time": 0,
+    "servo_index": null,
+    "chemical": "No chemical \u2014 resistant management"
+  },
+  {
+    "timestamp": "2025-09-05T03:28:24",
+    "source": "Webcam",
+    "disease": "Late blight",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:29:21",
+    "source": "Webcam",
+    "disease": "Late blight",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:30:22",
+    "source": "Webcam",
+    "disease": "Late blight",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:31:03",
+    "source": "Webcam",
+    "disease": "Septoria leaf spot",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 2.5,
+    "servo_index": 4,
+    "chemical": "Azoxystrobin",
+    "esp32_response": "Action complete for Duration: 2.50 and Servo Index: 4"
+  },
+  {
+    "timestamp": "2025-09-05T03:32:32",
+    "source": "Webcam",
+    "disease": "Septoria leaf spot",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 2.5,
+    "servo_index": 4,
+    "chemical": "Azoxystrobin",
+    "esp32_response": "Action complete for Duration: 2.50 and Servo Index: 4"
+  },
+  {
+    "timestamp": "2025-09-05T03:32:35",
+    "source": "Webcam",
+    "disease": "Septoria leaf spot",
+    "confidence": 0.9999983310699463,
+    "spray": true,
+    "spray_time": 2.5,
+    "servo_index": 4,
+    "chemical": "Azoxystrobin",
+    "esp32_response": "Action complete for Duration: 2.50 and Servo Index: 4"
+  },
+  {
+    "timestamp": "2025-09-05T03:32:41",
+    "source": "Webcam",
+    "disease": "Septoria leaf spot",
+    "confidence": 0.9426434636116028,
+    "spray": true,
+    "spray_time": 2.5,
+    "servo_index": 4,
+    "chemical": "Azoxystrobin",
+    "esp32_response": "Action complete for Duration: 2.50 and Servo Index: 4"
+  },
+  {
+    "timestamp": "2025-09-05T03:32:59",
+    "source": "Webcam",
+    "disease": "Late blight",
+    "confidence": 0.9999873638153076,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:33:15",
+    "source": "Webcam",
+    "disease": "Late blight",
+    "confidence": 0.6611024737358093,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:33:51",
+    "source": "Webcam",
+    "disease": "Leaf Mold",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 2,
+    "servo_index": 3,
+    "chemical": "Mancozeb",
+    "esp32_response": "Action complete for Duration: 2.00 and Servo Index: 3"
+  },
+  {
+    "timestamp": "2025-09-05T03:34:10",
+    "source": "Webcam",
+    "disease": "Leaf Mold",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 2,
+    "servo_index": 3,
+    "chemical": "Mancozeb",
+    "esp32_response": "Action complete for Duration: 2.00 and Servo Index: 3"
+  },
+  {
+    "timestamp": "2025-09-05T03:50:36",
+    "source": "Upload",
+    "disease": "Late blight",
+    "confidence": 0.9999998807907104,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:51:00",
+    "source": "Upload",
+    "disease": "Late blight",
+    "confidence": 0.9999998807907104,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:51:30",
+    "disease": "Manual Override",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 3.0,
+    "servo_index": 0,
+    "chemical": "Manual",
+    "esp32_response": "Action complete for Duration: 3.00 and Servo Index: 0"
+  },
+  {
+    "timestamp": "2025-09-05T03:52:16",
+    "source": "Upload",
+    "disease": "Late blight",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:52:25",
+    "source": "Upload",
+    "disease": "Late blight",
+    "confidence": 1.0,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  },
+  {
+    "timestamp": "2025-09-05T03:52:41",
+    "source": "Upload",
+    "disease": "TYLCV",
+    "confidence": 1.0,
+    "spray": false,
+    "spray_time": 0,
+    "servo_index": null,
+    "chemical": "No chemical \u2014 resistant management"
+  },
+  {
+    "timestamp": "2025-09-05T03:53:01",
+    "source": "Upload",
+    "disease": "Late blight",
+    "confidence": 0.9728792905807495,
+    "spray": true,
+    "spray_time": 3.5,
+    "servo_index": 2,
+    "chemical": "Metalaxyl",
+    "esp32_response": "Action complete for Duration: 3.50 and Servo Index: 2"
+  }
+]

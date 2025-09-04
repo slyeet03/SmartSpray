@@ -121,10 +121,13 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildResultCard(Map<String, dynamic> res) {
-    final prediction = res['prediction'] ?? {};
-    final recommendation = res['recommendation'] ?? {};
-    final gemini = res['gemini'] ?? {};
-    final command = res['command'] ?? {};
+    final prediction = res['prediction'] ?? <String, dynamic>{};
+    final recommendation = res['recommendation'] ?? <String, dynamic>{};
+    final log = res['log'] ?? <String, dynamic>{};
+
+    // prediction from your Flask server is: { "disease": "...", "confidence": 0.xyz }
+    final disease = prediction['disease'] ?? 'N/A';
+    final confidence = (prediction['confidence'] != null) ? (prediction['confidence'] is num ? (prediction['confidence'] * 100).toStringAsFixed(2) + '%' : prediction['confidence'].toString()) : 'N/A';
 
     return Card(
       child: Padding(
@@ -134,32 +137,23 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Text("Prediction", style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 6),
-            Text("Class: ${prediction['class_id'] ?? 'N/A'}"),
-            Text("Confidence: ${prediction['confidence'] ?? 'N/A'}"),
+            Text("Disease: $disease"),
+            Text("Confidence: $confidence"),
             Divider(),
             Text("Recommendation", style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 6),
-            Text("Stage/Disease: ${recommendation['disease'] ?? recommendation['stage'] ?? 'N/A'}"),
+            Text("Disease/Stage: ${recommendation['disease'] ?? recommendation['stage'] ?? 'N/A'}"),
             Text("Chemical: ${recommendation['chemical'] ?? 'N/A'}"),
-            Text("Quantity: ${recommendation['quantity_per_200L'] ?? 'N/A'}"),
+            Text("Quantity: ${recommendation['quantity_per_200L'] ?? recommendation['quantity'] ?? 'N/A'}"),
             Divider(),
-            if (gemini is Map && gemini['gemini_info'] != null) ...[
-              Text("Gemini Info", style: TextStyle(fontWeight: FontWeight.bold)),
-              SizedBox(height: 6),
-              Text(gemini['gemini_info'].toString()),
-              Divider(),
-            ],
             Text("Command for ESP32", style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 6),
-            Text("Spray: ${command['spray'] == true ? 'YES' : 'NO'}"),
-            Text("Servo index/angle: ${command['servo_index'] ?? command['servo_angle'] ?? 'N/A'}"),
-            Text("Pump seconds: ${command['pump_seconds'] ?? command['pump_seconds'] ?? 'N/A'}"),
+            Text("Spray: ${log['spray'] == true ? 'YES' : 'NO'}"),
+            Text("Servo index/angle: ${log['servo_index'] ?? log['servo_angle'] ?? 'N/A'}"),
+            Text("Spray time (s): ${log['spray_time'] ?? log['pump_seconds'] ?? 'N/A'}"),
           ],
         ),
       ),
     );
   }
 }
-
-
-

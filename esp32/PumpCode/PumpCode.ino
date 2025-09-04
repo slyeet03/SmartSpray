@@ -22,7 +22,7 @@ void OpenValveForSeconds(float duration, int servoIndex) {
     Serial.println("Error: Invalid Servo Index");
     return;
   }
-
+ 
   Serial.println("Starting pump...");
   digitalWrite(DC_Pump, HIGH); // 1. DC pump first starts
 
