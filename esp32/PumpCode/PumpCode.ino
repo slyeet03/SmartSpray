@@ -3,13 +3,13 @@
 #include <WebServer.h>
 
 // Replace with your network credentials
-const char* ssid = "Nothing Phone (2)_8358";
-const char* password = "chikenscanfly";
+const char* ssid = "";
+const char* password = "";
 
 // Create a WebServer object on port 80
 WebServer server(80);
 
-byte Servos[] = {22};
+byte Servos[] = {16,17,18};
 
 #define SERVO_COUNT sizeof(Servos)
 Servo myServos[SERVO_COUNT];
@@ -22,7 +22,7 @@ void OpenValveForSeconds(float duration, int servoIndex) {
     Serial.println("Error: Invalid Servo Index");
     return;
   }
- 
+
   Serial.println("Starting pump...");
   digitalWrite(DC_Pump, HIGH); // 1. DC pump first starts
 
