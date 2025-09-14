@@ -22,4 +22,5 @@ def get_recommendation(class_id: str):
         "spray_time": 0,
         "servo_index": None,
         "chemical": "None",
+        "amount": 0
     }

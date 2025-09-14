@@ -1,2 +1,64 @@
 ml/archive
 ml/test
+ml/__pycache__
+ml/*.keras
+ml/*.h5
+ml/*.tflite
+.DS_Store
+ml/logs
+
+# Miscellaneous
+app/*.class
+app/*.log
+app/*.pyc
+app/*.swp
+app/.DS_Store
+app/.atom/
+app/.build/
+app/.buildlog/
+app/.history
+app/.svn/
+app/.swiftpm/
+app/migrate_working_dir/
+
+# IntelliJ related
+app/*.iml
+app/*.ipr
+app/*.iws
+app/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+app/**/doc/api/
+app/**/ios/Flutter/.last_build_id
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.pub-cache/
+app/.pub/
+app//build/
+
+# Symbolication related
+app/app.*.symbols
+
+# Obfuscation related
+app/app.*.map.json
+
+# Android Studio will place build artifacts here
+app/android/app/debug
+app/android/app/profile
+app/android/app/release
+
+.env
+*.xlsx
+
+*.pdf
+server/__pycache__
+server/.env
+SmartSpray/
+server/__pycache__
+server/__pycache__/*.pyc

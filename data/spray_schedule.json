@@ -2,43 +2,49 @@
   "Tomato___Early_blight": {
     "disease": "Early blight",
     "spray": true,
-    "spray_time": 3,
-    "servo_index": 1,
-    "chemical": "Chlorothalonil"
+    "spray_time": 5,
+    "servo_index": 0,
+    "chemical": "Chlorothalonil",
+    "amount": 50
   },
   "Tomato___Late_blight": {
     "disease": "Late blight",
     "spray": true,
-    "spray_time": 3.5,
-    "servo_index": 2,
-    "chemical": "Metalaxyl"
+    "spray_time": 4,
+    "servo_index": 1,
+    "chemical": "Metalaxyl",
+    "amount": 30
   },
   "Tomato___Leaf_Mold": {
     "disease": "Leaf Mold",
     "spray": true,
-    "spray_time": 2,
-    "servo_index": 0,
-    "chemical": "Mancozeb"
+    "spray_time": 5,
+    "servo_index": 2,
+    "chemical": "Mancozeb",
+    "amount": 50
   },
   "Tomato___Septoria_leaf_spot": {
     "disease": "Septoria leaf spot",
     "spray": true,
-    "spray_time": 2.5,
-    "servo_index": 2,
-    "chemical": "Azoxystrobin"
+    "spray_time": 2,
+    "servo_index": 0,
+    "chemical": "Azoxystrobin",
+    "amount": 20
   },
   "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
     "disease": "TYLCV",
     "spray": false,
     "spray_time": 0,
     "servo_index": null,
-    "chemical": "No chemical — resistant management"
+    "chemical": "No chemical — resistant management",
+    "amount": 0
   },
   "Tomato___healthy": {
     "disease": "Healthy",
     "spray": false,
     "spray_time": 0,
     "servo_index": null,
-    "chemical": "None"
+    "chemical": "None",
+    "amount": 0
   }
 }
