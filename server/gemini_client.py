@@ -2,8 +2,7 @@ import os
 
 import requests
 
-#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_API_KEY = "AIzaSyCozpuNd_caNfR0Xo-htgW5J6RpqF9yD1c"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def get_disease_info(disease_name):
     if not GEMINI_API_KEY:
