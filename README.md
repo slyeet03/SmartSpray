@@ -151,6 +151,8 @@ This project was built as part of the SmartSpray IoT + ML integration initiative
 ## Limitations
 
 This project had several limitations including:
-1. Dataset was small so therefore sometimes the result was mismatched.
-2. Overfitting
-3. This Project was intending to go forward and utilise a CNC machine sort of implementation over crop field which lacked practicality and needs much more thought before execution.
+
+- Dataset was small so therefore sometimes the result was mismatched.
+- Overfitting
+- This Project was intending to go forward and utilise a CNC machine sort of implementation over crop field which lacked practicality and needs much more thought before execution.
+
