@@ -145,3 +145,12 @@ This project was built as part of the SmartSpray IoT + ML integration initiative
 - End-to-end pipeline from image capture → ML inference → ESP32 actuation
 - Gemini AI integration for farmer-friendly disease explanations
 - Full Flutter mobile app with manual override and spray history
+
+---
+
+## Limitations
+
+This project had several limitations including:
+1. Dataset was small so therefore sometimes the result was mismatched.
+2. Overfitting
+3. This Project was intending to go forward and utilise a CNC machine sort of implementation over crop field which lacked practicality and needs much more thought before execution.
